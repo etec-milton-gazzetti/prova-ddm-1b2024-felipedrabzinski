@@ -4,10 +4,7 @@ import Home from './screens/home.js';
 
 export default function App() {
   return (
-    <View style={styles.container}>
       <Home/>
-      <StatusBar style="auto" />
-    </View>
   );
 }
 
