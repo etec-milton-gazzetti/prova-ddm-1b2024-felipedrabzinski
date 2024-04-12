@@ -9,6 +9,7 @@ export default function Home({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text style={styles.title}>Revolução Russa</Text>
+      <Image source={require('../assets/russa_revolucao.png')} style={styles.image}/>
       <Pressable
         style={{ padding: 10, backgroundColor: '#000000', borderRadius: 5, marginTop: 10, width: '50%', alignItems: 'center' }}
         onPress={() => navigation.navigate("Conteudo")}
@@ -49,6 +50,12 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
+  },
+
+  image: {
+    width: 150,
+    height: 150,
+    marginBottom: 10,
   },
 
 });
